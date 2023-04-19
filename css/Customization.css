@@ -1,0 +1,506 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    list-style: none;
+}
+
+body {
+    width: 1920px;
+    height: 3400px;
+    overflow-x: hidden;
+    background-image: url(../image/bg5.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/********************************************************
+                        header
+********************************************************/
+
+header {
+    width: 1920px;
+    height: 100px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.301);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+    overflow: hidden;
+    display: flex;
+    /* 추가: flex container로 설정 */
+}
+
+header:hover {
+    background-color: #ffffff;
+}
+
+header:hover ul a {
+    color: black;
+}
+
+.logo img {
+    width: 80px;
+    margin-left: 160px;
+}
+
+#headerWrap {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+/* 고정 내비게이션 */
+#head {
+    width: 1920px;
+    margin-top: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_menu {
+    display: flex;
+    padding-left: 0;
+    margin-right: 140px;
+}
+
+.navbar_menu>li>a {
+    padding: 8px 30px;
+}
+
+.navbar_menu>li>a {
+    color: #fff;
+    font-family: 'Tenor Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* 내비게이션 마우스 오버 시 */
+.navbar_menu>li>a:hover,
+.navbar_menu>li>a:focus,
+.navbar_menu>li>a.on {
+    color: rgb(138, 171, 233);
+    text-decoration: none;
+}
+
+.navbar_menu>li>a {
+    font-weight: 500;
+    display: table-cell;
+    vertical-align: middle;
+    transition: all 0.4s;
+    text-decoration: none;
+}
+
+/********************************************************
+                        section 1
+********************************************************/
+
+#Consultation {
+    width: 600px;
+    margin: 15% 0 0 9%;
+}
+
+#Consultation h1 {
+    font-size: 40px;
+    padding-bottom: 9px;
+    font-family: 'Courgette', cursive;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: slideIn 1.5s ease forwards;
+}
+
+#Consultation h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background-color: #000000;
+    transition: width 0.3s ease;
+}
+
+#Consultation h1:hover::after {
+    width: 360px;
+}
+
+@keyframes slideIn {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 360px;
+    }
+}
+
+#Consultation h1 {
+    color: rgb(24, 24, 24);
+    text-decoration: none;
+}
+
+#Consultation h1:hover,
+#Consultation h1:focus,
+#Consultation h1.on {
+    color: rgb(138, 171, 233);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#Consultation p {
+    margin-top: 4%;
+    line-height: 1.5;
+    font-family: 'NanumBarunGothic';
+}
+
+/********************************************************
+                    section1
+********************************************************/
+
+.Sleep2 {
+    font-family: 'NanumBarunGothic';
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 10%;
+    text-align: center;
+    opacity: 0;
+    animation: sleepFadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes sleepFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/********************************************************
+                        section 1
+********************************************************/
+
+#section {
+    margin: 0 auto;
+}
+
+#necessary {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#necessary p {
+    line-height: 1.6;
+}
+
+.imagesContainer {
+    width: 500px;
+    height: 280px;
+    position: absolute;
+    overflow: hidden;
+    box-shadow: -3px 3px 15px rgba(0, 0, 0, 0.5);
+    margin: 10% 40% 0 0;
+}
+
+.imagesContainer2 {
+    width: 500px;
+    height: 280px;
+    position: absolute;
+    overflow: hidden;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+    margin: 34% 0 0 40%;
+}
+
+.imagesContainer3 {
+    width: 500px;
+    height: 280px;
+    position: absolute;
+    overflow: hidden;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+    margin: 58% 40% 0 0;
+}
+
+.imagesContainer4 {
+    width: 500px;
+    height: 280px;
+    position: absolute;
+    overflow: hidden;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+    margin: 82% 0 0 40%;
+}
+
+.imagesContainer img {
+    width: 500px;
+    position: absolute;
+}
+
+.imagesContainer2 img {
+    width: 500px;
+    position: absolute;
+}
+
+.imagesContainer3 img {
+    width: 500px;
+    position: absolute;
+}
+
+.imagesContainer4 img {
+    width: 500px;
+    position: absolute;
+}
+
+.fadeInClass {
+    animation-name: fadeIn;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+#necessary p:nth-of-type(1) {
+    position: absolute;
+    font-family: 'NanumBarunGothic';
+    font-size: 24px;
+    font-weight: 400;
+    margin: 13% 0 0 15%;
+
+}
+
+#necessary p:nth-of-type(2) {
+    position: absolute;
+    font-family: 'NanumBarunGothic';
+    font-size: 20px;
+    font-weight: 300;
+    margin: 17% 0 0 37%;
+}
+
+#necessary p:nth-of-type(3) {
+    position: absolute;
+    font-family: 'NanumBarunGothic';
+    font-size: 24px;
+    font-weight: 400;
+    margin: 37% 60.2% 0 0;
+
+}
+
+#necessary p:nth-of-type(4) {
+    position: absolute;
+    font-family: 'NanumBarunGothic';
+    font-size: 20px;
+    font-weight: 300;
+    margin: 41% 46% 0 0;
+}
+
+#necessary p:nth-of-type(5) {
+    position: absolute;
+    font-family: 'NanumBarunGothic';
+    font-size: 24px;
+    font-weight: 400;
+    margin: 62% 0 0 19%;
+
+}
+
+#necessary p:nth-of-type(6) {
+    position: absolute;
+    font-family: 'NanumBarunGothic';
+    font-size: 20px;
+    font-weight: 300;
+    margin: 66% 0 0 40%;
+}
+
+#necessary p:nth-of-type(7) {
+    position: absolute;
+    font-family: 'NanumBarunGothic';
+    font-size: 24px;
+    font-weight: 400;
+    margin: 85% 51.3% 0 0;
+
+}
+
+#necessary p:nth-of-type(8) {
+    position: absolute;
+    font-family: 'NanumBarunGothic';
+    font-size: 20px;
+    font-weight: 300;
+    margin: 89% 40% 0 0;
+}
+
+/* 애니메이션 */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/********************************************************
+                            section 2
+********************************************************/
+
+#section2 {
+    margin-top: 112%;
+}
+
+#section2 h1 {
+    text-align: center;
+    margin-bottom: 3%;
+    font-family: 'NanumBarunGothic';
+    font-size: 34px;
+    font-weight: 600;
+
+}
+
+.slider {
+    display: flex;
+    background: #000;
+}
+
+.slide {
+    height: 500px;
+    position: relative;
+    z-index: 10;
+    border: solid #fff;
+    border-width: 1px;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.25;
+    width: 30%;
+    transition: width 0.8s ease, opacity 0.5s ease;
+}
+
+.slide:hover {
+    width: 40%;
+    opacity: 1;
+}
+
+.slider h2 {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    color: #00000000;
+    z-index: 20;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide:hover h2 {
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    color: #fff;
+    background-color: #00000085;
+    padding: 15px 0 15px 0;
+    font-family: 'NanumBarunGothic';
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.slide:hover h2.show {
+    display: block;
+}
+
+/********************************************************
+                        footer
+********************************************************/
+#footer_box {
+    width: 100%;
+    height: 100px;
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    background-color: #2c2a29;
+}
+
+#address {
+    font-family: '맑은고딕';
+    font-size: 13px;
+    line-height: 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+/********************************************************
+                        font Courgette
+********************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+/********************************************************
+                        font Noto Sans Korean
+********************************************************/
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+/********************************************************
+                    font Gothic A1
+********************************************************/
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
